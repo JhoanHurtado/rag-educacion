@@ -1,0 +1,47 @@
+# ==============================================================================
+# 1. Variables de entorno y credenciales (Seguridad Cloud)
+# ==============================================================================
+.env
+.env.*
+!.env.example
+
+# ==============================================================================
+# 2. Datos tabulares, cachés y bases de datos locales autogeneradas por el notebook
+#    (Solo se versionan los documentos normativos fuente en data/docs/*.md)
+# ==============================================================================
+data/csv/
+data/sql/
+*.csv
+*.db
+*.sqlite
+*.sqlite3
+cache_*.json
+
+# ==============================================================================
+# 3. Documentos de referencia externos y PDFs
+# ==============================================================================
+*.pdf
+ACA_1_Computacion_Nube_RAG.md
+
+# ==============================================================================
+# 4. Entornos virtuales y artefactos de Python / Jupyter
+# ==============================================================================
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+.pytest_cache/
+
+# ==============================================================================
+# 5. Archivos de sistema operativo (macOS) e IDEs
+# ==============================================================================
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.vscode/
+.idea/
+
